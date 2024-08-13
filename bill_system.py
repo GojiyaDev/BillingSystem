@@ -32,6 +32,32 @@ root.bind("<Escape>", exit_fullscreen)
 def home():
     Framedisplay = tk.Frame(root, height=750,  width=1412, bg='#8ecae6', relief=tk.SUNKEN)
     Framedisplay.place(x=60,y=170)   
+    bar_categories = ['2018', '2019', '2020', '2021', '2022']
+    bar_values = [25, 20, 25, 20,35]
+
+    # Sample data for pie chart
+    pie_labels = ['A', 'B', 'C', 'D']
+    pie_sizes = [15, 30, 45, 10] 
+   
+
+    # Create a figure object with two subplots
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14.12, 7.5))
+
+    # Bar chart setup
+    ax1.bar(bar_categories, bar_values, color='skyblue')
+    ax1.set_xlabel('')
+    ax1.set_ylabel('')
+    ax1.set_title('Bar Chart Of Sales')
+
+    # Pie chart setup
+    ax2.pie(pie_sizes, labels=pie_labels, autopct='%1.1f%%', startangle=140)
+    ax2.set_title('Pie Chart Of Product')
+
+    # Embed the plot into the Tkinter window
+    canvas = FigureCanvasTkAgg(fig, master=Framedisplay)
+    canvas.draw()
+    canvas.get_tk_widget().pack()    
+
 
 
 fontlabel = ('Calisto MT',20,'')
