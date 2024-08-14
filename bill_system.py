@@ -102,6 +102,27 @@ def bill():
     statecombo.set("Select Here")  # Set the default value
     statecombo.place(x=600,y=250)   
 
+    ToPlbl = tk.Label(Framedisplay, text='Type OF Property', font=fontlabel, bg='#8ecae6')
+    ToPlbl.place(x=950,y=250)
+    combo = ttk.Combobox(Framedisplay,width=10,font=fontlabel ,values=["Public", "Private"])
+    combo.set("Select Here")  # Set the default value
+    combo.place(x=1180,y=250)
+
+    Machinenamelbl = tk.Label(Framedisplay, text='Model Name', font=fontlabel, bg='#8ecae6')
+    Machinenamelbl.place(x=30,y=400)
+    MachinenameEntry = tk.Entry(Framedisplay, font=fontlabel, width=15)
+    MachinenameEntry.place(x=200,y=400)
+
+    costperdaylbl = tk.Label(Framedisplay, text='Day Cost', font=fontlabel, bg='#8ecae6')
+    costperdaylbl.place(x=520,y=400)
+    costperdayEntry = tk.Entry(Framedisplay, font=fontlabel, width=15)
+    costperdayEntry.place(x=650,y=400)
+
+    Dayslbl = tk.Label(Framedisplay, text='Days', font=fontlabel, bg='#8ecae6')
+    Dayslbl.place(x=1000,y=400)
+    DaysEntry = tk.Entry(Framedisplay, font=fontlabel, width=15)
+    DaysEntry.place(x=1080,y=400)
+
 
 def records():
     Framedisplay = tk.Frame(root,height=750,width=1412,bg='#8ecae6')
