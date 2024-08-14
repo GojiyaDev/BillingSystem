@@ -65,6 +65,42 @@ fontlabel = ('Calisto MT',20,'')
 def bill():
     Framedisplay = tk.Frame(root,height=750,width=1412,bg='#8ecae6')
     Framedisplay.place(x=60,y=170)
+    invoicelbl = tk.Label(Framedisplay, text='Invoice No', font=fontlabel, bg='#8ecae6')
+    invoicelbl.place(x=15,y=15)
+    invoiceEntry = tk.Entry(Framedisplay, font=fontlabel, width=5)
+    invoiceEntry.place(x=160,y=15)
+
+    datelbl = tk.Label(Framedisplay, text='Date', font=fontlabel, bg='#8ecae6')
+    datelbl.place(x=1180,y=15)
+    dateEntry = tk.Entry(Framedisplay, font=fontlabel, width=10)
+    dateEntry.place(x=1250,y=15)
+
+    namelbl = tk.Label(Framedisplay, text='Name', font=fontlabel, bg='#8ecae6')
+    namelbl.place(x=15,y=100)
+    nameEntry = tk.Entry(Framedisplay, font=fontlabel, width=15)
+    nameEntry.place(x=100,y=100)
+
+    phonelbl = tk.Label(Framedisplay, text='Phone No.', font=fontlabel, bg='#8ecae6')
+    phonelbl.place(x=520,y=100)
+    phoneEntry = tk.Entry(Framedisplay, font=fontlabel, width=15)
+    phoneEntry.place(x=650,y=100)
+
+    
+    Addlbl = tk.Label(Framedisplay, text='Address', font=fontlabel, bg='#8ecae6')
+    Addlbl.place(x=1050,y=100)
+    AddEntry = tk.Entry(Framedisplay, font=fontlabel, width=15)
+    AddEntry.place(x=1150,y=100)
+
+    Citylbl = tk.Label(Framedisplay, text='City', font=fontlabel, bg='#8ecae6')
+    Citylbl.place(x=30,y=250)
+    CityEntry = tk.Entry(Framedisplay, font=fontlabel, width=15)
+    CityEntry.place(x=100,y=250)
+
+    statelbl = tk.Label(Framedisplay, text='State', font=fontlabel, bg='#8ecae6')
+    statelbl.place(x=520,y=250)
+    statecombo = ttk.Combobox(Framedisplay,width=16,font=fontlabel ,values=["Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal"])
+    statecombo.set("Select Here")  # Set the default value
+    statecombo.place(x=600,y=250)   
 
 
 def records():
