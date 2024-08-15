@@ -113,15 +113,6 @@ def bill():
     MachinenameEntry = tk.Entry(Framedisplay, font=fontlabel, width=15)
     MachinenameEntry.place(x=200,y=400)
 
-    costperdaylbl = tk.Label(Framedisplay, text='Day Cost', font=fontlabel, bg='#8ecae6')
-    costperdaylbl.place(x=520,y=400)
-    costperdayEntry = tk.Entry(Framedisplay, font=fontlabel, width=15)
-    costperdayEntry.place(x=650,y=400)
-
-    Dayslbl = tk.Label(Framedisplay, text='Days', font=fontlabel, bg='#8ecae6')
-    Dayslbl.place(x=1000,y=400)
-    DaysEntry = tk.Entry(Framedisplay, font=fontlabel, width=15)
-    DaysEntry.place(x=1080,y=400)
 
 
 def records():
